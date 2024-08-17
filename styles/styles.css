@@ -192,11 +192,11 @@ main {
         margin-top: 64px;
         margin-bottom: 64px;
         margin-inline: 144px;
-        /* scale: 0.7;
+        scale: 0.7;
         opacity: 0;
         animation: fade-in linear forwards;
         animation-timeline: view();
-        animation-range: 0 250px; */
+        animation-range: 0 250px;
     }
 }
 
@@ -377,11 +377,15 @@ footer{
 
     .bottom-navigation li a {
         flex-direction: column;
+        font-size: 16px;
+        gap: 8px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .content-container {
         width: 100%;
-        margin-bottom: -124px;
+        margin-bottom: -91px;
     }
 
     .main-header {
@@ -394,7 +398,7 @@ footer{
         }
     
         to {
-            transform: translateY(-124px);
+            transform: translateY(-91px);
         }
     }
 }
