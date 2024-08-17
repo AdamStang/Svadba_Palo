@@ -7,7 +7,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/b8309505ca.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/contact.css">
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
         <title>Svadba</title>
@@ -15,7 +17,7 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="upper-navigation">
                 <ul>
                     <li>
                         <a href="../index.html">Svadba</a>
@@ -30,13 +32,67 @@
             </nav>
         </header>
         <main>
+            <div class="landing-page-container">
+                <h1 class="main-header">EMA & PALO</h1>
+                <a class="move-down-icon" href="#content">
+                    <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                </a>
+            </div>
 
+            <div class="content-container" id="content">
+                <nav class="bottom-navigation">
+                    <ul>
+                        <li>
+                            <a href="../index.html"><i class="fa-solid fa-church"></i> Svadba</a>
+                        </li>
+                        <li>
+                            <a href="../pages/gallery.html"><i class="fa-solid fa-image"></i> Galéria</a>
+                        </li>
+                        <li>
+                            <a href="../pages/contact.html" class="active"><i class="fa-solid fa-address-book"></i> Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section class="contact">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-envelope divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>KONTAKT</h2>
+                    <p class="section-text">Ak máte akékoľvek otázky, neváhajte nás kontaktovať.</p>
+                    <!-- <div class="divider">
+                        <div class="divider-line"></div>
+                    </div> -->
+                    <div class="contacts-container">
+                        <div class="contact-person-container">
+                            <div class="person-avatar">
+                                <i class="fa-solid fa-circle-user avatar-icon"></i>
+                            </div>
+                            <div class="person-info">
+                                <p class="name">Ema</p>
+                                <p class="email">[example1@gmail.com]</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-person-container">
+                            <div class="person-avatar">
+                                <i class="fa-solid fa-circle-user avatar-icon"></i>
+                            </div>
+                            <div class="person-info">
+                                <p class="name">Pavol</p>
+                                <p class="email">[example2@gmail.com]</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer>
             <p>© 2024 Svadba</p>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
         <script type="text/javascript" src="../scripts/script.js"></script>
     </body>
 </html>

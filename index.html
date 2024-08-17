@@ -9,6 +9,13 @@
         <script src="https://kit.fontawesome.com/b8309505ca.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <!-- https://gisadamtoth.github.io/svadba_web/index.html -->
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
         <title>Svadba</title>
@@ -16,47 +23,104 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="upper-navigation">
                 <ul>
                     <li>
+                        <i class="fa-solid fa-church"></i>
                         <a href="index.html">Svadba</a>
                     </li>
                     <li>
+                        <i class="fa-solid fa-image"></i>
                         <a href="pages/gallery.html">Galéria</a>
                     </li>
                     <li>
+                        <i class="fa-solid fa-address-book"></i>
                         <a href="pages/contact.html">Kontakt</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="main-container">
-                <h1 class="main-header">Ema & Palo</h1>
+            <div class="landing-page-container">
+                <h1 class="main-header">EMA & PALO</h1>
                 <a class="move-down-icon" href="#content">
                     <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
                 </a>
-                <div class="main-content" id="content">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                </div>
+            </div>
+
+            <div class="content-container" id="content">
+                <nav class="bottom-navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="active"><i class="fa-solid fa-church"></i> Svadba</a>
+                        </li>
+                        <li>
+                            <a href="pages/gallery.html"><i class="fa-solid fa-image"></i> Galéria</a>
+                        </li>
+                        <li>
+                            <a href="pages/contact.html"><i class="fa-solid fa-address-book"></i> Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section class="place-and-time">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-heart divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>A TAK SA NÁŠ PRÍBEH ZAČNE</h2>
+                    <p class="section-text">S radosťou oznamujeme, že si sľúbime lásku, úctu a vernosť v [den] v [miesto].</p>
+                </section>
+
+                <section class="map">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-location-dot divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>MAPA</h2>
+                    <div id="map"></div>
+                    <p class="section-text">Sv. omša so sobášnym obradom: kostol najsvätejšej Trojice (Holubyho 92, Pezinok) </p>
+                    <p class="section-text">Hostina a zábava pre pozvaných hostí: reštaurácia nDegust (Za dráhou 21, Pezinok)</p>
+                </section>
+
+                <section class="dresscode">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-person-dress divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>DRESSCODE</h2>
+                    <p class="section-text">Svadbu neladíme do žiadnej konkrétnej farby. Našou jedinou prosbou je aby ste viele šaty nechali v šatníku.</p>
+                </section>
+
+                <section class="wedding-presents">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-gift divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>SVADOBNÉ DARY</h2>
+                    <p class="section-text">Ak by ste nás chceli potešiť nejakým darom, v tejto <a href="https://docs.google.com/spreadsheets/d/1IHCnsDGr_pNgEnvDU8YxdQej7uhSbjPo5R8xMnEfMA8/edit?gid=0#gid=0" target="_blank" class="table-link"><i class="fa-solid fa-table"></i> tabuľke</a> je zopár tipov na veci, ktoré by sa nám zišli. V prípade že sa pre nejaký z darov v tabuľke rozhodnete zapíšte vedľa neho svoje meno. Takto bude váš dar pre nás jedinečný. Rovnako sa veľmi potešíme aj finančnému daru.</p>
+                </section>
+
+                <section class="accomodation">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-house divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>UBYTOVANIE</h2>
+                    <p class="section-text">Odvoz a ubytovanie nechávame vo vašej réžii. V blízkosti miesta hostiny sa nachádza vlaková stanica, z ktorej pravidelne odchádzajú spoje smer Bratislava a Trnava. Na rovnakom mieste je aj autobusové nástupište, odkiaľ sa dostanete do okolitých obcí. Ak sa vám v neskorých nočných hodinách po svadbe nebude chcieť cestovať, ale prespať v Pezinku, odporúčame rezervovať si ubytovanie v hoteloch a ubytovacích zariadeniach v Pezinku.</p>
+                </section>
             </div>
         </main>
         <footer>
             <p>© 2024 Svadba</p>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
         <script type="text/javascript" src="scripts/script.js"></script>
+        <script type="text/javascript" src="scripts/leafletScript.js"></script>
     </body>
 </html>
