@@ -183,19 +183,21 @@ main {
 /* =============================================== */
 
 /* =================   SECTIONS   ================= */
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 36px;
-    margin-top: 64px;
-    margin-bottom: 64px;
-    margin-inline: 144px;
-    scale: 0.7;
-    opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: 0 250px;
+@media (prefers-reduced-motion: no-preference) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        margin-top: 64px;
+        margin-bottom: 64px;
+        margin-inline: 144px;
+        scale: 0.7;
+        opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range: 0 250px;
+    }
 }
 
 .divider {
@@ -309,10 +311,13 @@ footer{
     }
 }
 
-@keyframes fade-in {
-    to {
-        scale: 1;
-        opacity: 1;
+@media (prefers-reduced-motion: no-preference) {
+
+    @keyframes fade-in {
+        to {
+            scale: 1;
+            opacity: 1;
+        }
     }
 }
 

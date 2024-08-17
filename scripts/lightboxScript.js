@@ -1,10 +1,3 @@
-// lightbox.option({
-//     'resizeDuration': 200,
-//     'wrapAround': true,
-//     'disableScrolling': true,
-//     'maxHeight': $( window ).height()
-// });
-
 const lightboxEnabled = document.querySelectorAll('.lightbox-enabled');
 const lightboxArray = Array.from(lightboxEnabled);
 const lastImage = lightboxArray.length - 1;
