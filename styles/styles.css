@@ -192,11 +192,11 @@ main {
         margin-top: 64px;
         margin-bottom: 64px;
         margin-inline: 144px;
-        scale: 0.7;
+        /* scale: 0.7;
         opacity: 0;
         animation: fade-in linear forwards;
         animation-timeline: view();
-        animation-range: 0 250px;
+        animation-range: 0 250px; */
     }
 }
 
