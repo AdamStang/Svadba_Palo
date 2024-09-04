@@ -241,6 +241,65 @@ section h2 {
     height: 500px; 
     width: 100%;
 }
+
+.section-image {
+    flex: 1;
+    width: 100%;
+}
+
+.palette-colors {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.palette-color {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 4px 0 16px 2px rgba(255, 255, 255, 0.12);
+    transition: 0.3s ease;
+}
+
+.palette-color:hover {
+    box-shadow: 4px 0 32px 4px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.color-1 {
+    background-color: #214639;
+}
+
+.color-2 {
+    background-color: #244313;
+}
+
+.color-3 {
+    background-color: #6C7A24;
+}
+
+.color-4 {
+    background-color: #EEDFA4;
+}
+
+.color-5 {
+    background-color: #AC3E1C;
+}
+
+.color-6 {
+    background-color: #EB9137;
+}
+
+.color-7 {
+    background-color: #C89A65;
+}
+
+.color-8 {
+    background-color: #DECF77;
+}
 /* =============================================== */
 
 /* =================   FOOTER   ================== */
@@ -325,6 +384,15 @@ footer{
     body {
         background-position: 0 center;
     }
+
+    .palette-colors { 
+        gap: 24px;
+    }
+
+    .palette-color {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 @media screen and (max-width: 1300px) { 
@@ -348,6 +416,11 @@ footer{
         font-size: 20px;
         line-height: 36px;
     }
+
+    .palette-color {
+        width: 160px;
+        height: 160px;
+    }
 }
 
 @media screen and (max-width: 1000px) { 
@@ -358,6 +431,15 @@ footer{
     .main-header {
         font-size: 72px;
     }
+
+    .palette-colors { 
+        gap: 16px;
+    }
+
+    .palette-color {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 @media screen and (max-width: 800px) { 
@@ -367,6 +449,11 @@ footer{
 
     .main-header {
         font-size: 64px;
+    }
+
+    .palette-color {
+        width: 120px;
+        height: 120px;
     }
 }
 
@@ -390,6 +477,15 @@ footer{
 
     .main-header {
         font-size: 48px;
+    }
+
+    .palette-colors { 
+        gap: 12px;
+    }
+
+    .palette-color {
+        width: 100px;
+        height: 100px;
     }
 
     @keyframes slideFromBotomContent {
