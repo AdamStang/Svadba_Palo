@@ -1,0 +1,62 @@
+.contacts-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    color: white;
+    gap: 32px;
+    align-items: center;
+}
+
+.contact-person-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-avatar .avatar-icon {
+    font-size: 64px;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.person-info .name {
+    font-size: 24px;
+}
+
+.person-info .email {
+    font-size: 20px;
+    color: rgb(113, 204, 60);
+}
+
+@media screen and (max-width: 1000px) { 
+    .person-avatar .avatar-icon {
+        font-size: 48px;
+    }
+
+    .person-info .name {
+        font-size: 20px;
+    }
+
+    .person-info .email {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 650px) { 
+    .person-avatar .avatar-icon {
+        font-size: 40px;
+    }
+
+    .person-info .name {
+        font-size: 18px;
+    }
+
+    .person-info .email {
+        font-size: 16px;
+    }
+}

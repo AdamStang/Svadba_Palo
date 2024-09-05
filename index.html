@@ -5,58 +5,134 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/b8309505ca.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        
         <link rel="stylesheet" href="styles/styles.css">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.jpg" />
+        
         <title>Svadba</title>
         <link rel="shortcut icon" type="image/png" href="assets/images/avatar.png">
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="upper-navigation">
                 <ul>
                     <li>
+                        <i class="fa-solid fa-church"></i>
                         <a href="index.html">Svadba</a>
                     </li>
                     <li>
+                        <i class="fa-solid fa-image"></i>
                         <a href="pages/gallery.html">Galéria</a>
                     </li>
                     <li>
+                        <i class="fa-solid fa-address-book"></i>
                         <a href="pages/contact.html">Kontakt</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="main-container">
-                <h1 class="main-header">Ema & Palo</h1>
+            <div class="landing-page-container">
+                <h1 class="main-header">EMA & PALO</h1>
                 <a class="move-down-icon" href="#content">
                     <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
                 </a>
-                <div class="main-content" id="content">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum illo ad officiis tempora repellendus deserunt voluptatibus sequi rerum inventore. Quia aliquid aut cum asperiores nemo sit ex, esse dolorem.</div>
-                </div>
+            </div>
+
+            <div class="content-container" id="content">
+                <nav class="bottom-navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="active"><i class="fa-solid fa-church"></i> Svadba</a>
+                        </li>
+                        <li>
+                            <a href="pages/gallery.html"><i class="fa-solid fa-image"></i> Galéria</a>
+                        </li>
+                        <li>
+                            <a href="pages/contact.html"><i class="fa-solid fa-address-book"></i> Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section class="place-and-time">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-heart divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>A TAK SA NÁŠ PRÍBEH ZAČNE</h2>
+                    <p class="section-text">
+                        Prvé rande na Lomničáku, zásnuby v Nepále a svadba bude....
+5. Októbra 2024 o 15:00 v Kostole sv. Ondreja vo Voderadoch. 
+Budeme sa tešiť, keď to s nami prídete osláviť!                         
+                    </p>
+                </section>
+
+                <section class="map">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-location-dot divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>MAPA</h2>
+                    <div id="map"></div>
+                    <p class="section-text">Odobierka: U Haršányových o 14:00 (Hlavná 367/5 Voderady) </p>
+                    <p class="section-text">Sv. omša so sobášnym obradom: kostol sv. Ondreja (Zichiho námestie, Voderady)</p>
+                    <p class="section-text">Hostina a zábava pre pozvaných hostí: Zemiansky dvor (Krakovská 67, Šúrovce)</p>
+
+                </section>
+
+                <section class="dresscode">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-person-dress divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>DRESSCODE</h2>
+                    <p class="section-text">Jesenná svadba bude chcieť jesenné farby, preto ak sa chcete s nami zladiť, nechajte sa inšpirovať: </p>
+                    <!-- <img src="assets/images/colorPalette.png" class="section-image" /> -->
+                    <div class="palette-colors">
+                        <div class="palette-color color-1"></div>
+                        <div class="palette-color color-2"></div>
+                        <div class="palette-color color-3"></div>
+                        <div class="palette-color color-4"></div>
+                        <div class="palette-color color-5"></div>
+                        <div class="palette-color color-6"></div>
+                        <div class="palette-color color-7"></div>
+                        <div class="palette-color color-8"></div>
+                    </div>
+                </section>
+
+                <section class="wedding-presents">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-gift divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>SVADOBNÉ DARY</h2>
+                    <p class="section-text">Ak by ste nás chceli potešiť nejakým darom, v tejto <a href="https://docs.google.com/spreadsheets/d/1IHCnsDGr_pNgEnvDU8YxdQej7uhSbjPo5R8xMnEfMA8/edit?gid=0#gid=0" target="_blank" class="table-link"><i class="fa-solid fa-table"></i> tabuľke</a> je zopár tipov na veci, ktoré by sa nám zišli. V prípade že sa pre nejaký z darov v tabuľke rozhodnete zapíšte vedľa neho svoje meno. Takto bude váš dar pre nás jedinečný. Rovnako sa veľmi potešíme aj finančnému daru.</p>
+                </section>
+
+                <section class="accomodation">
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <i class="fa-solid fa-house divider-icon"></i>
+                        <div class="divider-line"></div>
+                    </div>
+                    <h2>UBYTOVANIE</h2>
+                    <p class="section-text">Odvoz z hostiny vám zabezpečíme do Trnavy a okolia. Ubytovať sa dá aj priamo v Zemianskom dvore. Ak by ste mali záujem, dajme nám vedieť a spravíme vám rezerváciu. </p>
+                </section>
             </div>
         </main>
         <footer>
             <p>© 2024 Svadba</p>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <script src="https://kit.fontawesome.com/b8309505ca.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
         <script type="text/javascript" src="scripts/script.js"></script>
+        <script type="text/javascript" src="scripts/leafletScript.js"></script>
     </body>
 </html>
